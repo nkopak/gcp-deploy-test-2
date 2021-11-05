@@ -1,14 +1,23 @@
+"use strict"
+
+// [START gae_node_request_example]
 const express = require("express")
-const path = require("path")
 
 const app = express()
 
 app.get("/", (req, res) => {
-  // res.sendFile(path.join(__dirname, "/view/index.html"))
-  res.send("Breadchyk is a great guy with lots of opportunities")
+  res
+    .status(200)
+    .send("Breadchyk is a great guy with lots of opportunities")
+    .end()
 })
 
-const PORT = 8000
-app.listen(PORT, _ => {
+// Start the server
+const PORT = process.env.PORT || 8080
+app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`)
+  console.log("Press Ctrl+C to quit.")
 })
+// [END gae_node_request_example]
+
+module.exports = app

@@ -2,14 +2,18 @@
   "name": "gcp-deploy-test",
   "version": "1.0.0",
   "description": "GCP Deployment Test",
+  "private": true,
   "main": "server.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/nkopak/gcp-deploy-test"
   },
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
