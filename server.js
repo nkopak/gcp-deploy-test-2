@@ -6,10 +6,7 @@ const express = require("express")
 const app = express()
 
 app.get("/", (req, res) => {
-  res
-    .status(200)
-    .send("Breadchyk is a great guy with lots of opportunities")
-    .end()
+  res.status(200).send("Deploy changes test").end()
 })
 
 // Start the server
