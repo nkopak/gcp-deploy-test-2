@@ -1,23 +1,24 @@
 {
   "name": "gcp-deploy-test",
   "version": "1.0.0",
-  "description": "GCP Deployment Test",
-  "private": true,
+  "description": "",
   "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nkopak/gcp-deploy-test"
-  },
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "url": "git+https://github.com/nkopak/gcp-deploy-test-2.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "bugs": {
+    "url": "https://github.com/nkopak/gcp-deploy-test-2/issues"
+  },
+  "homepage": "https://github.com/nkopak/gcp-deploy-test-2#readme"
 }
